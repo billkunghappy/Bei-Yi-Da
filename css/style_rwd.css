@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1100px) {
-	.catalog_item > span{
+	.catalog_item > span, .modal-img > span{
         font-size: 20px;
     }
     .catalog_item > img{
@@ -21,16 +21,33 @@
 		line-height: 3.2vh;
 	}
 }
-@media only screen and (max-height: 768px) {
+/*700切換*/
+@media only screen and (max-height: 700px) {
 	#footer{
 		font-size:9px;
 	}
 }
+/**/
 @media only screen and (max-width: 700px) {
+	/*change index nav*/
 	#catalog{
 		display: none;
 	}
 	#map_bg{
 		display: block;
     }
+    /*change modal*/
+    .pop-up-modal.two{
+    	height: 80vh;
+    	margin: 8vh auto;
+    }
+
+    .modal-img.right{
+		margin-top: 10vh;
+    }
+    .modal-img{
+    	height: 30vh;
+		width: 64vw;
+    }
+
 }

@@ -13,8 +13,10 @@
 	<!-- Catalog -->
 	<div id="catalog" class="bg_start" >
 		<div class="catalog_item"  id="catalog_item_0">
-			<img src="img/catalog_0.png" class="catalog_item_img">
-			<span>生活輔導<br>及校園安全</span>
+			<a href="#">
+				<img src="img/catalog_0.png" class="catalog_item_img">
+				<span>生活輔導<br>及校園安全</span>
+			</a>
 		</div>
 		<div class="catalog_item"  id="catalog_item_1">
 			<img src="img/catalog_1.png" class="catalog_item_img">
@@ -37,7 +39,7 @@
 			<span>北藝大校歌</span>
 		</div>
 		<div class="catalog_item"  id="catalog_item_6">
-			<img src="img/catalog_6.png" class="catalog_item_img">
+			<img src="img/catalog_6.png" class="catalog_item_img" data-toggle="modal" data-target="#Course">
 			<span>選課須知</span>
 		</div>
 	</div>
@@ -45,45 +47,45 @@
 	<div id="map_bg">
 	    <div id="map_body">
 	    	<img src="img/map_road.png">
-			<div class="map_item"  id="map_item_0">
-				<a href="#">
+			<div class="map_item under"  id="map_item_0">
+				<a href="#" id="map_route_6">
 				<img src="img/catalog_0.png" class="map_item_img">
 				<span>生活輔導<br>及校園安全</span>
 				</a>
 			</div>
-			<div class="map_item"  id="map_item_1">
-				<a href="#">
+			<div class="map_item under"  id="map_item_1">
+				<a href="#" id="map_route_4">
 				<img src="img/catalog_1.png" class="map_item_img">
 				<span>109學年新生<br>始業教育課程</span>
 				</a>
 			</div>
 			<div class="map_item middle"  id="map_item_2">
-				<a href="#">
+				<a href="#" id="map_route_1">
 				<img src="img/catalog_2.png" class="map_item_img">
 				<span>歷年成果</span>
 				</a>
 			</div>
-			<div class="map_item middle"  id="map_item_3">
-				<a href="#">
+			<div class="map_item middle under"  id="map_item_3">
+				<a href="#" id="map_route_3">
 				<img src="img/catalog_3_rev.png" >
 				<span>最新消息</span>
 				</a>
 			</div>
 			<div class="map_item middle"  id="map_item_4">
-				<a href="#">
+				<a href="#" id="map_route_5">
 				<img src="img/catalog_4.png" class="map_item_img" data-toggle="modal" data-target="#StudentManual">
 				<span>學生手冊</span>
 				</a>
 			</div>
 			<div class="map_item"  id="map_item_5">
-				<a href="#">
+				<a href="#" id="map_route_2">
 				<img src="img/catalog_5.png" class="map_item_img">
 				<span>北藝大校歌</span>
 				</a>
 			</div>
-			<div class="map_item"  id="map_item_6">
-				<a href="#">
-				<img src="img/catalog_6.png" class="map_item_img">
+			<div class="map_item under"  id="map_item_6">
+				<a href="#" id="map_route_7">
+				<img src="img/catalog_6.png" class="map_item_img" data-toggle="modal" data-target="#Course">
 				<span>選課須知</span>
 				</a>
 			</div>
@@ -97,7 +99,7 @@
 				<img src="img/homepage_car.png" class="map_item_img">
 			</div>
 			<div class="map_item"  id="map_item_moon">
-				<a href="#">
+				<a href="#" id="map_route_0">
 				<img src="img/homepage_enter.png" class="map_item_img">
 				</a>
 			</div>
@@ -108,17 +110,29 @@
 	</button> -->
 
 	<!-- Modal -->
-	<div class="modal fade" id="StudentManual" tabindex="-1" role="dialog" aria-labelledby="v" aria-hidden="true">
+	<div class="modal fade" id="StudentManual" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog" role="document">
-	    	<div class="modal-content pop-up-modal">
+	    	<div class="modal-content pop-up-modal two">
 	    		<div class="modal-body">
-					<div class="modal-img" style="float: left;" >
+					<div class="modal-img left">
 						<img src="img/catalog_4.png">
 						<span>108學生手冊</span>
 					</div>
-					<div class="modal-img" style="float: right;">
+					<div class="modal-img right">
 						<img src="img/club.png">
 						<span>社團</span>
+					</div>
+	    		</div>
+	    	</div>
+		</div>
+	</div>
+	<div class="modal fade" id="Course" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+	    	<div class="modal-content pop-up-modal">
+	    		<div class="modal-body">
+					<div class="modal-img only">
+						<img src="img/course.png">
+						<span>選課資訊</span>
 					</div>
 	    		</div>
 	    	</div>
