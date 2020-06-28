@@ -96,7 +96,7 @@ a:link{
 	background-repeat: no-repeat;
 	height: 100%;
 	width: 100%;
-	margin-left: 100%;
+	transform: translateX(100%);
 	display: none;
 }
 #map_body{
@@ -277,10 +277,11 @@ a:link{
 	width: 100%;
 	position: absolute;
 	background-image: url(../img/catalog_bg.png);
-	left: 100%;
+	transform: translateX(100%);
 	background-position-x: 0%;
 	overflow: hidden;
 }
+
 .catalog_item{
 	display: inline-block;
 	position: relative;
