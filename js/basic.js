@@ -9,24 +9,24 @@ function set_gif(frames,target,img_prefix,cnt_frame_dig){
     }, 30 );
     return timer;
 }
-var car_run_timer=null;
-var moon_timer=null;
+var map_car_run_timer=null;
+var map_moon_timer=null;
 $("#open_index").click(async function(){
-	car_run_timer = set_gif(72,"#map_item_car > img",'img/gif/car_run_square/carsmokeone_000',2);
-	moon_timer = set_gif(72,"#map_item_moon > img",'img/gif/moon/moon_000',2);
+	map_car_run_timer = set_gif(72,"#map_item_car > img",'img/gif/car_run_square/carsmokeone_000',2);
+	map_moon_timer = set_gif(72,"#map_item_moon > img",'img/gif/moon/moon_000',2);
     $("#map_bg").animate({transform: 'translateX(0%)'},{ duration: 900, queue: false });
     $("#catalog").animate({transform: 'translateX(0%)'},{ duration: 1200, queue: false });
 });
 $("#close_index_catalog").click(async function(){
-    clearInterval(car_run_timer);
-    clearInterval(moon_timer);
+    clearInterval(map_car_run_timer);
+    clearInterval(map_moon_timer);
     $("#map_bg").animate({transform: 'translateX(100%)'},{ duration: 900, queue: false });
     $("#catalog").animate({transform: 'translateX(100%)'},{ duration: 1200, queue: false });
 });
 $("#close_index_map").click(async function(){
     setTimeout(function() {
-        clearInterval(car_run_timer);
-        clearInterval(moon_timer);
+        clearInterval(map_car_run_timer);
+        clearInterval(map_moon_timer);
     }, 1200 );
     $("#map_bg").animate({transform: 'translateX(100%)'},{ duration: 900, queue: false });
     $("#catalog").animate({transform: 'translateX(100%)'},{ duration: 1200, queue: false });

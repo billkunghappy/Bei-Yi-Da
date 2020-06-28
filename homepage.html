@@ -11,15 +11,19 @@
 	<div id="slide_bg" class="bg_start">
 		<!-- <video autoplay loop muted playsinline src="img/gif/run_compress.gif" id="car"></video> -->
 		<!-- <img src="img/gif/run_compress.gif" id="car"> -->
-		<img src="img/gif/car_run/carsmokeone_00000.png" id="car">
+		<img src="img/gif/car_run/carsmoke_00000.png" id="car">
 	</div>
 	<div id="slide_front" class="bg_start">
 		<img src="img/gif/moon/moon_00000.png" id="enter">
 	</div>
+	<!-- Catalog -->
 	<div id="catalog" class="bg_start" >
+		<!-- <img src="img/close.png" id="close_index_catalog" class="map_icon"> -->
 		<div class="catalog_item"  id="catalog_item_0">
-			<img src="img/catalog_0.png" class="catalog_item_img">
-			<span>生活輔導<br>及校園安全</span>
+			<a href="#">
+				<img src="img/catalog_0.png" class="catalog_item_img">
+				<span>生活輔導<br>及校園安全</span>
+			</a>
 		</div>
 		<div class="catalog_item"  id="catalog_item_1">
 			<img src="img/catalog_1.png" class="catalog_item_img">
@@ -34,7 +38,7 @@
 			<span>學生手冊</span>
 		</div>
 		<div class="catalog_item middle"  id="catalog_item_4">
-			<img src="img/catalog_4.png" class="catalog_item_img">
+			<img src="img/catalog_4.png" class="catalog_item_img" data-toggle="modal" data-target="#StudentManual">
 			<span>學生手冊</span>
 		</div>
 		<div class="catalog_item"  id="catalog_item_5">
@@ -42,72 +46,73 @@
 			<span>北藝大校歌</span>
 		</div>
 		<div class="catalog_item"  id="catalog_item_6">
-			<img src="img/catalog_6.png" class="catalog_item_img">
+			<img src="img/catalog_6.png" class="catalog_item_img" data-toggle="modal" data-target="#Course">
 			<span>選課須知</span>
 		</div>
 	</div>
-		<!-- Map -->
-  <div id="map_bg">
-    <div id="map_body">
-    	<img src="img/map_road.png">
-		<div class="map_item"  id="map_item_0">
-			<a href="#">
-			<img src="img/catalog_0.png" class="map_item_img">
-			<span>生活輔導<br>及校園安全</span>
-			</a>
-		</div>
-		<div class="map_item"  id="map_item_1">
-			<a href="#">
-			<img src="img/catalog_1.png" class="map_item_img">
-			<span>109學年新生<br>始業教育課程</span>
-			</a>
-		</div>
-		<div class="map_item middle"  id="map_item_2">
-			<a href="#">
-			<img src="img/catalog_2.png" class="map_item_img">
-			<span>歷年成果</span>
-			</a>
-		</div>
-		<div class="map_item middle"  id="map_item_3">
-			<a href="#">
-			<img src="img/catalog_3_rev.png" >
-			<span>最新消息</span>
-			</a>
-		</div>
-		<div class="map_item middle"  id="map_item_4">
-			<a href="#">
-			<img src="img/catalog_4.png" class="map_item_img">
-			<span>學生手冊</span>
-			</a>
-		</div>
-		<div class="map_item"  id="map_item_5">
-			<a href="#">
-			<img src="img/catalog_5.png" class="map_item_img">
-			<span>北藝大校歌</span>
-			</a>
-		</div>
-		<div class="map_item"  id="map_item_6">
-			<a href="#">
-			<img src="img/catalog_6.png" class="map_item_img">
-			<span>選課須知</span>
-			</a>
-		</div>
-		<div class="map_item-special"  id="map_item_7">
-			<img src="img/map_fork.png" class="map_item_img">
-		</div>
-		<div class="map_item-special"  id="map_item_8">
-			<img src="img/map_ok.png" class="map_item_img">
-		</div>
-		<div class="map_item-special"  id="map_item_car">
-			<img src="img/homepage_car.png" class="map_item_img">
-		</div>
-		<div class="map_item"  id="map_item_moon">
-			<a href="#">
-			<img src="img/homepage_enter.png" class="map_item_img">
-			</a>
-		</div>
-    </div>
-  </div>
+	<!-- Map -->
+	<div id="map_bg">
+		<!-- <img src="img/close.png" id="close_index_map" class="map_icon"> -->
+	    <div id="map_body">
+	    	<img src="img/map_road.png">
+			<div class="map_item under"  id="map_item_0">
+				<a href="#" id="map_route_6">
+				<img src="img/catalog_0.png" class="map_item_img">
+				<span>生活輔導<br>及校園安全</span>
+				</a>
+			</div>
+			<div class="map_item under"  id="map_item_1">
+				<a href="#" id="map_route_4">
+				<img src="img/catalog_1.png" class="map_item_img">
+				<span>109學年新生<br>始業教育課程</span>
+				</a>
+			</div>
+			<div class="map_item middle"  id="map_item_2">
+				<a href="#" id="map_route_1">
+				<img src="img/catalog_2.png" class="map_item_img">
+				<span>歷年成果</span>
+				</a>
+			</div>
+			<div class="map_item middle under"  id="map_item_3">
+				<a href="#" id="map_route_3">
+				<img src="img/catalog_3_rev.png" >
+				<span>最新消息</span>
+				</a>
+			</div>
+			<div class="map_item middle"  id="map_item_4">
+				<a href="#" id="map_route_5">
+				<img src="img/catalog_4.png" class="map_item_img" data-toggle="modal" data-target="#StudentManual">
+				<span>學生手冊</span>
+				</a>
+			</div>
+			<div class="map_item"  id="map_item_5">
+				<a href="#" id="map_route_2">
+				<img src="img/catalog_5.png" class="map_item_img">
+				<span>北藝大校歌</span>
+				</a>
+			</div>
+			<div class="map_item under"  id="map_item_6">
+				<a href="#" id="map_route_7">
+				<img src="img/catalog_6.png" class="map_item_img" data-toggle="modal" data-target="#Course">
+				<span>選課須知</span>
+				</a>
+			</div>
+			<div class="map_item-special"  id="map_item_7">
+				<img src="img/map_fork.png" class="map_item_img">
+			</div>
+			<div class="map_item-special"  id="map_item_8">
+				<img src="img/map_ok.png" class="map_item_img">
+			</div>
+			<div class="map_item-special"  id="map_item_car">
+				<img src="img/homepage_car.png" class="map_item_img">
+			</div>
+			<div class="map_item"  id="map_item_moon">
+				<a href="#" id="map_route_0">
+				<img src="img/homepage_enter.png" class="map_item_img">
+				</a>
+			</div>
+	    </div>
+	</div>
 	<!-- Button trigger modal -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/egjs-jquery-transform/2.0.0/transform.min.js"></script>

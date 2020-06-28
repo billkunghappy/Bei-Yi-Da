@@ -19,8 +19,10 @@ function set_gif(frames,target,img_prefix,cnt_frame_dig, frame_speed=30){
 }
 var car_run_timer = set_gif(72,"#car",'img/gif/car_run/carsmoke_000',2);
 var moon_timer = set_gif(72,"#enter",'img/gif/moon/moon_000',2);
-
+var car_leave=null;
 $("#enter").click(async function(){
+    map_car_run_timer = set_gif(72,"#map_item_car > img",'img/gif/car_run_square/carsmokeone_000',2);
+    map_moon_timer = set_gif(72,"#map_item_moon > img",'img/gif/moon/moon_000',2);
     clearInterval(car_run_timer);
     $('#car').hide();
     $('#car').attr('src','img/gif/car_speedup/forwardone_00000.png');
@@ -29,7 +31,7 @@ $("#enter").click(async function(){
     setTimeout(function() {
         clearInterval(car_speedup);
         $('#car').attr('src','img/gif/car_leave/forwardtwo_00000.png');
-        var car_leave = set_gif(48,"#car",'img/gif/car_leave/forwardtwo_000',2);
+        car_leave = set_gif(48,"#car",'img/gif/car_leave/forwardtwo_000',2);
     }, 520 );
     
     // await sleep(2000);
@@ -41,8 +43,8 @@ $("#enter").click(async function(){
     }, 2300 );
 	setTimeout(function() {
         // $("#catalog").animate({transform: 'translateX(-100%)'},{ duration: 1800, queue: true });
-        $("#catalog").animate({"left": '0px'},{ duration: 1800, queue: true });
-        $("#map_bg").animate({"margin-left": '0px'},{ duration: 900, queue: false });
+        $("#map_bg").animate({transform: 'translateX(0%)'},{ duration: 900, queue: false });
+        $("#catalog").animate({transform: 'translateX(0%)'},{ duration: 1200, queue: false });
         $("#slide_bg").animate({"opacity": '0.5', "display":"none"},{ duration: 1800, queue: true });
         $("#slide_front").animate({"opacity": '0.5', "display":"none"},{ duration: 1800, queue: true });
     }, 1200 );
