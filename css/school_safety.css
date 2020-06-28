@@ -1,0 +1,170 @@
+body{
+	background-image: url(../img/school_safety/bg.png);
+	background-size: cover;
+}
+#information{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 91vh;
+}
+@media only screen and (min-width: 1025px) {
+	.main-content{
+		position: relative;
+		width: 64%;
+		height: 75vh;
+		background-color: #8d847f;
+		opacity: 0.92;
+		box-shadow: 1px;
+		margin-left: 18%;
+		margin-top: 10vh;
+		border-radius: 15px;
+	}
+
+	.bg-img{
+		position: absolute;
+		height: 70vh;
+		width: 23%;
+		overflow: hidden;
+		background-size: contain;
+		background-repeat: no-repeat;	
+	}
+	.bg-img.top{
+		top: 10vh;
+		left: -5%;
+		background-position: right;
+		background-image: url(../img/catalog_0_left.png);
+	}
+	.bg-img.bottom{
+		top: 10vh;
+		right: -5%;
+		background-position: left;
+		background-image: url(../img/catalog_0_right.png);
+	}
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.main-content{
+		position: relative;
+		width: 80%;
+		height: auto;
+		background-color: #8d847f;
+		opacity: 0.92;
+		box-shadow: 1px;
+		margin-left: 10%;
+		border-radius: 15px;
+		padding-bottom: 3vh;
+		overflow: auto;
+	}
+
+	.bg-img{
+		position: relative;
+		height: 10.5vh;
+		width: 80%;
+		margin-top: 5%;
+		overflow: hidden;
+		background-size: contain;
+		background-repeat: no-repeat;	
+	}
+	.bg-img.top{
+		margin-left: 10%;
+		background-position: bottom;
+		background-image: url(../img/catalog_0_top.png);
+	}
+	.bg-img.bottom{
+		margin-top: 0px;
+		margin-left: 10%;
+		margin-bottom: 11.6vh;
+		background-position: top;
+		background-image: url(../img/catalog_0_bottom.png);
+	}
+
+}
+
+.main-content > .left{
+	width: 45%;
+	padding: 10px;
+	float: left;
+	margin: 0px;
+}
+.main-content > .right{
+	width: 45%;
+	padding: 10px;
+	float: right;
+	margin: 0px;
+}
+.title{
+	padding: 4vh 6vw;
+	padding-right: 0px;
+	color: #ffd13b;
+	line-height: 4vh;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+	font-size: 3.2vh;
+	letter-spacing: 0.25vh;
+}
+.context{
+	padding: 1vh 6vw;
+	/*padding-right: 0px;*/
+	color: #f1edec;
+	line-height: 3vh;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+	font-size: 2vh;
+	margin: 0.5vh 0px;
+	letter-spacing: 0.25vh;
+}
+.left .context, .left .title{
+	padding-right: 0px;
+}
+.right .context, .right .title{
+	padding-left: 0px;
+}
+.title.sub{
+	vertical-align: bottom;
+	font-size: 2.4vh;
+}
+.title.sub a{
+	color: #f1edec;
+}
+@media only screen and (max-width: 1024px) {
+	.title{
+		line-height: 3vh;
+		font-size: 3vh;
+		letter-spacing: 0.20vh;
+	}
+	.context{
+		line-height: 2.5vh;
+		font-size: 1.7vh;
+		letter-spacing: 0.20vh;
+	}
+	.top-margin{
+		line-height: 1.2vh;
+	}
+}
+@media only screen and (max-width: 510px) {
+	.title{
+		font-size: 2vh;
+		letter-spacing: 0.10vh;
+	}
+	.context{
+		font-size: 1.4vh;
+		letter-spacing: 0.10vh;
+	}
+	.title.sub{
+		font-size: 1.8vh;
+	}
+}
+@media only screen and (max-height: 768px) {
+	.context{
+		line-height: 2.4vh;
+	}
+	.top-margin{
+		line-height: 0.8vh;
+	}
+}
+
+
