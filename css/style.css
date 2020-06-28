@@ -72,8 +72,10 @@ a:link{
 }
 
 #map_bg{
+	left: 0px;
+	top: 0px;
 	z-index: 1000;
-	position: relative;
+	position: absolute;
 	background-image: url(../img/map_bg.png);
 	background-size: cover;
 	background-position: center;
@@ -256,6 +258,8 @@ a:link{
 }
 
 #catalog{
+	left: 0px;
+	top: 0px;
 	z-index: 1000;
 	height: 100%;
 	width: 100%;
