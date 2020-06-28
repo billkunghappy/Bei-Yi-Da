@@ -20,6 +20,12 @@
 	width: auto;
 	height: 80vh;
 }
+@media (orientation:portrait) {
+	#car{
+		-webkit-transform: translateY(64%) translateX(calc(100vw - 35vh));
+		height: 50vh;
+	}
+}
 
 #enter{
 	position: absolute;
@@ -27,8 +33,16 @@
 	top: -8vh;
 	width: auto;
 	height: 60vh;
+	max-height: 60vw;
 	cursor: pointer;
 }
+@media only screen and (max-width: 700px) {
+	#enter{
+		max-height: 80vw;
+		left: -10%;
+	}
+}
+
 #slide_bg{
 	background-image: url(../img/homepage_bg.png);
 }

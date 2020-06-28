@@ -22,7 +22,7 @@ var moon_timer = set_gif(72,"#enter",'img/gif/moon/moon_000',2);
 var car_leave=null;
 $("#enter").click(async function(){
     map_car_run_timer = set_gif(72,"#map_item_car > img",'img/gif/car_run_square/carsmokeone_000',2);
-    map_moon_timer = set_gif(72,"#map_item_moon > img",'img/gif/moon/moon_000',2);
+    map_moon_timer = set_gif(72,"#map_item_moon img",'img/gif/moon/moon_000',2);
     clearInterval(car_run_timer);
     $('#car').hide();
     $('#car').attr('src','img/gif/car_speedup/forwardone_00000.png');

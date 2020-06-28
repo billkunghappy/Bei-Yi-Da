@@ -13,7 +13,7 @@ var map_car_run_timer=null;
 var map_moon_timer=null;
 $("#open_index").click(async function(){
 	map_car_run_timer = set_gif(72,"#map_item_car > img",'img/gif/car_run_square/carsmokeone_000',2);
-	map_moon_timer = set_gif(72,"#map_item_moon > img",'img/gif/moon/moon_000',2);
+	map_moon_timer = set_gif(72,"#map_item_moon img",'img/gif/moon/moon_000',2);
     $("#map_bg").animate({transform: 'translateX(0%)'},{ duration: 900, queue: false });
     $("#catalog").animate({transform: 'translateX(0%)'},{ duration: 1200, queue: false });
 });
