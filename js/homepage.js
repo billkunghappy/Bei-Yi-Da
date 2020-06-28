@@ -42,6 +42,7 @@ $("#enter").click(async function(){
 	setTimeout(function() {
         // $("#catalog").animate({transform: 'translateX(-100%)'},{ duration: 1800, queue: true });
         $("#catalog").animate({"left": '0px'},{ duration: 1800, queue: true });
+        $("#map_bg").animate({"margin-left": '0px'},{ duration: 900, queue: false });
         $("#slide_bg").animate({"opacity": '0.5', "display":"none"},{ duration: 1800, queue: true });
         $("#slide_front").animate({"opacity": '0.5', "display":"none"},{ duration: 1800, queue: true });
     }, 1200 );

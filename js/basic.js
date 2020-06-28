@@ -9,5 +9,11 @@ function set_gif(frames,target,img_prefix,cnt_frame_dig){
     }, 30 );
     return timer;
 }
-var car_run_timer = set_gif(72,"#map_item_car > img",'img/gif/car_run_square/carsmokeone_000',2);
-var moon_timer = set_gif(72,"#map_item_moon > img",'img/gif/moon/moon_000',2);
+
+
+$("#map_icon").click(async function(){
+	var car_run_timer = set_gif(72,"#map_item_car > img",'img/gif/car_run_square/carsmokeone_000',2);
+	var moon_timer = set_gif(72,"#map_item_moon > img",'img/gif/moon/moon_000',2);
+	$("#map_bg").animate({"margin-left": '0px'},{ duration: 900, queue: false });
+    $("#catalog").animate({"left": '0px'},{ duration: 900, queue: false });
+});
