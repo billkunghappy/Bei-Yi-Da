@@ -402,3 +402,54 @@ a:link{
 		display: block;
 	}
 }
+
+/*modal*/
+.pop-up-modal{
+	height: 60vh;
+	width: 70vw;
+	margin: 15vh auto;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.modal-dialog{
+	max-width: none;
+
+}
+.modal-body{
+	letter-spacing: 0px;
+	padding: 5vh 2vw;
+	padding-bottom: 1vh;
+	background-color: #F1EDEC;
+}
+.modal-img{
+	display: inline-block;
+	position: relative;
+	height: 54vh;
+	width: 32vw;
+	cursor: pointer;
+}
+.modal-img > img{
+	position: relative;
+	display: inline-block;
+	height: 80%;
+	width: 100%;
+	margin: 0px;
+	object-fit: contain;
+}
+.modal-img > span{
+	height: 20%;
+	width: 100%;
+	display: inline-block;
+	vertical-align: center;
+	line-height: 10vh;
+	margin: auto;
+	text-align: center;
+	font-size: 30px;
+	color: #7a7a7c;
+	letter-spacing: 6px;
+	-webkit-transition: all .6s ease;
+}
+.modal-img:hover > span{
+	color: #eb9387;
+	-webkit-transition: all .6s ease;
+}
