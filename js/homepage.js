@@ -28,7 +28,10 @@ $("#enter").click(async function(){
     
     // await sleep(2000);
     setTimeout(function() {
-	   $("#car").animate({transform: 'translateY(15%) translateX(-80%)'},{ duration: 1800, queue: false });
+        if ($( window ).width()<$( window ).height())
+            $("#car").animate({transform: 'translateY(64%) translateX(-80%)'},{ duration: 1800, queue: false });  
+        else
+            $("#car").animate({transform: 'translateY(15%) translateX(-80%)'},{ duration: 1800, queue: false });
     }, 500 );
     setTimeout(function() {
        clearInterval(car_leave);
