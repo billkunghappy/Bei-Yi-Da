@@ -22,18 +22,27 @@ a{
 a:link{
   text-decoration: none!important;
 }
-#map_icon{
-	width: 10vh;
+
+.map_icon{
+	z-index: 999;
+	width: 4vh;
+	margin:  2vh;
 	height: auto;
 	position: fixed;
-	right: 0px;
-	top: 0px;
 	cursor: pointer;
 	-webkit-transition: all .6s ease;
 }
-#map_icon:hover{
+.map_icon:hover{
 	-webkit-transform: scale(1.2);
 	-webkit-transition: all .6s ease;
+}
+#open_index{
+	right: 0px;
+	top: 0px;
+}
+#close_index_catalog{
+	left: 0px;
+	top: 0px;
 }
 #footer{
 	z-index: 1;
@@ -268,7 +277,7 @@ a:link{
 	width: 100%;
 	position: absolute;
 	background-image: url(../img/catalog_bg.png);
-	left: 0%;
+	left: 100%;
 	background-position-x: 0%;
 	overflow: hidden;
 }
