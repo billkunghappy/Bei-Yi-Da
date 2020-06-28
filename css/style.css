@@ -390,15 +390,6 @@ a:link{
 	left: calc(14vw + 2vh);
 	top: calc(10% + 9vh);
 }
-@media only screen and (max-width: 700px) {
-	#catalog{
-		display: none;
-	}
-	#map_bg{
-		display: block;
-	}
-<<<<<<< HEAD
-}
 
 /*modal*/
 .pop-up-modal{
