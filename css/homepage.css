@@ -14,11 +14,11 @@
 #car{
 	position: absolute ;
 	/*width = 79vh*/
-	-webkit-transform: translateY(10%) translateX(calc(90vw - 70vh));
+	-webkit-transform: translateY(15%) translateX(calc(100vw - 60vh));
 	/*left: 50%;
 	top: 28%;*/
 	width: auto;
-	height: 90vh;
+	height: 80vh;
 }
 
 #enter{

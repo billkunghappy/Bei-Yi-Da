@@ -9,5 +9,5 @@ function set_gif(frames,target,img_prefix,cnt_frame_dig){
     }, 30 );
     return timer;
 }
-var car_run_timer = set_gif(72,"#map_item_car > img",'img/gif/car_run/carsmokeone_000',2);
+var car_run_timer = set_gif(72,"#map_item_car > img",'img/gif/car_run_square/carsmokeone_000',2);
 var moon_timer = set_gif(72,"#map_item_moon > img",'img/gif/moon/moon_000',2);

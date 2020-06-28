@@ -77,16 +77,23 @@ a:link{
 		font-size:9px;
 	}
 }
-#map_body{
-	padding: 0px;
-	margin: auto;
-	border: 0px;
-	height: 80vh;
-	width: 45vh;
+#map_bg{
 	background-image: url(../img/map_bg.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+#map_body{
+	z-index: 1000;
+	position: relative;
+	padding: 0px;
+	margin: auto;
+	border: 0px;
+	height: 100vh;
+	width: 56.25vh;
+	
 }
 #map_body img{
 	object-fit: cover;
@@ -160,7 +167,7 @@ a:link{
 }
 #map_item_6{
 	left:54%;
-	top:5s%;
+	top:5%;
 }
 #map_item_7{
 	left:-3%;
