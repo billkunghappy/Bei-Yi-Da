@@ -6,24 +6,16 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-
-function set_gif(frames,target,img_prefix,cnt_frame_dig, frame_speed=30){
-    var cnt_frame=0;
-    var timer = setInterval(function() {
-        cnt_frame+=1;
-        cnt_frame%=frames;
-        cnt_frame_str = ("0" + cnt_frame).slice(-cnt_frame_dig);
-        $(target).attr('src',img_prefix+cnt_frame_str.toString()+'.png');
-    }, frame_speed );
-    return timer;
-}
 var car_run_timer = set_gif(72,"#car",'img/gif/car_run/carsmoke_000',2);
 var moon_timer = set_gif(72,"#enter",'img/gif/moon/moon_000',2);
 var car_leave=null;
 $("#enter").click(async function(){
-    map_car_run_timer = set_gif(72,"#map_item_car > img",'img/gif/car_run_square/carsmokeone_000',2);
-    map_moon_timer = set_gif(72,"#map_item_moon img",'img/gif/moon/moon_000',2);
+    if ($( window ).width()<700){
+        map_car_run_timer = set_gif(72,"#map_item_car > img",'img/gif/car_run_square/carsmokeone_000',2);
+        map_moon_timer = set_gif(72,"#map_item_moon img",'img/gif/moon/moon_000',2);
+    }
     clearInterval(car_run_timer);
+    clearInterval(moon_timer);
     $('#car').hide();
     $('#car').attr('src','img/gif/car_speedup/forwardone_00000.png');
     $('#car').show();
