@@ -1,0 +1,60 @@
+body{
+	background-image: url(../img/song/song_bg.png);
+	background-size: cover;
+	overflow: scroll;
+}
+.info{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	opacity: 0.92;
+	box-shadow: 1px;
+	border-radius: 15px;
+}
+.title{
+	/* padding: 4vh 6vw; */
+	color: #ba3f46;
+	line-height: 4vh;
+	text-align: center;
+	width: 100%;
+	font-size: 3.2vh;
+	letter-spacing: 0.25vh;
+}
+.rabaren{
+	display: inline-block;
+	height: 100%;
+	width: 20%;
+	background-image: url(../img/song/校歌圖案.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.content{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20vh;
+	width: 70%;
+}
+.context{
+	display: inline-block;
+	padding: 2vh 6vw;
+	margin-bottom: 20%;
+	color: #7a7a7c;
+	line-height: 3vh;
+	text-align: left;
+	width: 100%;
+	font-size: 2vh;
+	letter-spacing: 0.25vh;
+}
+
+@media only screen and (max-width: 700px) {
+	.rabaren{
+		max-height: 200px;
+		width: 100%;
+	}
+	.content{
+		margin-top: 0px;
+	}
+}

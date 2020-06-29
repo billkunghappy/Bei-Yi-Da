@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>basic</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style_rwd.css">
+	<link rel="stylesheet" type="text/css" href="css/song.css">
+</head>
+<body>
+	
+	<img src="img/map_icon.png" id="open_index" class="map_icon">
+	<!-- Catalog -->
+	<div id="catalog">
+		<img src="img/close.png" id="close_index_catalog" class="map_icon">
+		<div class="catalog_item"  id="catalog_item_0">
+			<img src="img/catalog_0.png" class="catalog_item_img">
+			<span>生活輔導<br>及校園安全</span>
+		</div>
+		<div class="catalog_item"  id="catalog_item_1">
+			<img src="img/catalog_1.png" class="catalog_item_img">
+			<span>109學年新生<br>始業教育課程</span>
+		</div>
+		<div class="catalog_item middle"  id="catalog_item_2">
+			<img src="img/catalog_2.png" class="catalog_item_img">
+			<span>歷年成果</span>
+		</div>
+		<div class="catalog_item middle"  id="catalog_item_3">
+			<img src="img/catalog_3.png">
+			<span>學生手冊</span>
+		</div>
+		<div class="catalog_item middle"  id="catalog_item_4">
+			<img src="img/catalog_4.png" class="catalog_item_img" data-toggle="modal" data-target="#StudentManual">
+			<span>學生手冊</span>
+		</div>
+		<div class="catalog_item"  id="catalog_item_5">
+			<img src="img/catalog_5.png" class="catalog_item_img">
+			<span>北藝大校歌</span>
+		</div>
+		<div class="catalog_item"  id="catalog_item_6">
+			<img src="img/catalog_6.png" class="catalog_item_img" data-toggle="modal" data-target="#Course">
+			<span>選課須知</span>
+		</div>
+	</div>
+	<!-- Map -->
+	<div id="map_bg">
+		<img src="img/close.png" id="close_index_map" class="map_icon">
+	    <div id="map_body">
+	    	<img src="img/map_road.png">
+			<div class="map_item under"  id="map_item_0">
+				<a href="#" id="map_route_6">
+				<img src="img/catalog_0.png" class="map_item_img">
+				<span>生活輔導<br>及校園安全</span>
+				</a>
+			</div>
+			<div class="map_item under"  id="map_item_1">
+				<a href="#" id="map_route_4">
+				<img src="img/catalog_1.png" class="map_item_img">
+				<span>109學年新生<br>始業教育課程</span>
+				</a>
+			</div>
+			<div class="map_item middle"  id="map_item_2">
+				<a href="#" id="map_route_1">
+				<img src="img/catalog_2.png" class="map_item_img">
+				<span>歷年成果</span>
+				</a>
+			</div>
+			<div class="map_item middle under"  id="map_item_3">
+				<a href="#" id="map_route_3">
+				<img src="img/catalog_3_rev.png" >
+				<span>最新消息</span>
+				</a>
+			</div>
+			<div class="map_item middle"  id="map_item_4">
+				<a href="#" id="map_route_5">
+				<img src="img/catalog_4.png" class="map_item_img" data-toggle="modal" data-target="#StudentManual">
+				<span>學生手冊</span>
+				</a>
+			</div>
+			<div class="map_item"  id="map_item_5">
+				<a href="#" id="map_route_2">
+				<img src="img/catalog_5.png" class="map_item_img">
+				<span>北藝大校歌</span>
+				</a>
+			</div>
+			<div class="map_item under"  id="map_item_6">
+				<a href="#" id="map_route_7">
+				<img src="img/catalog_6.png" class="map_item_img" data-toggle="modal" data-target="#Course">
+				<span>選課須知</span>
+				</a>
+			</div>
+			<div class="map_item-special"  id="map_item_7">
+				<img src="img/map_fork.png" class="map_item_img">
+			</div>
+			<div class="map_item-special"  id="map_item_8">
+				<img src="img/map_ok.png" class="map_item_img">
+			</div>
+			<div class="map_item-special"  id="map_item_car">
+				<img src="img/homepage_car.png" class="map_item_img">
+			</div>
+			<div class="map_item"  id="map_item_moon">
+				<a href="#" id="map_route_0">
+				<img src="img/homepage_enter.png" class="map_item_img">
+				</a>
+			</div>
+	    </div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="StudentManual" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+	    	<div class="modal-content pop-up-modal two">
+	    		<div class="modal-body">
+					<div class="modal-img left">
+						<img src="img/catalog_4.png">
+						<span>108學生手冊</span>
+					</div>
+					<div class="modal-img right">
+						<img src="img/club.png">
+						<span>社團</span>
+					</div>
+	    		</div>
+	    	</div>
+		</div>
+	</div>
+	<div class="modal fade" id="Course" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+	    	<div class="modal-content pop-up-modal">
+	    		<div class="modal-body">
+					<div class="modal-img only">
+						<img src="img/course.png">
+						<span>選課資訊</span>
+					</div>
+	    		</div>
+	    	</div>
+		</div>
+	</div>
+	
+	<!-- Content -->
+	<div class="info">
+		<div class="rabaren"></div>
+		<div class="content">
+			<div class="title">北藝大校歌</div>
+			<div class="context">
+				本校校歌歌詞，是創校校長鮑幼玉先生的叩心之作。
+				關於創校之理念、教育宗旨， 以及對學生藝術造諧與
+				人格修養之深切期部 A 均熔鑄其中。
+				<br><br>
+				最初兩句「美哉關渡.鍾靈毓秀」形容校園的靈秀美景
+				，「莘莘學子.如切如磋」 指學子們初入學校，如嫩
+				茸、如縞氶 A 切磋琢磨之。下一行「菁菁子弟.敦厚
+				溫柔」述說就學期間，師長善加引領、學生篤實學習，
+				溫柔而不愚。
+				<br><br>
+				然後而能「志於道.據於德.依於仁.游於藝」，這裡將
+				四句校訓完整書出，期望學生立志高 遠，以德治事，
+				使內省外及均以仁為依歸，而後能悠游遍及眾家學問、
+				百工技藝， 得其樂也。最後，「謙謙君子.任重道遠」
+				是學成離校、各奔前程之時，莫忘保 有謙虛稟禮、嚴
+				以律己的君子之風，堅忍負重，始能大步邁開屬於自己
+				的未來。
+				校歌之譜曲，乃鮑校長請託馬水龍教授寫成。
+				1986年，時值馬水龍教授獲美國國務院傅爾布萊特
+				(Fulbright)學術交流獎助，前往哥倫比亞大學與賓
+				州大學進 行為期一年的學術考察，行前一天，鮑校長
+				交予自書之歌詞。
+				1987 年馬教授返 國前將成品寄回，詞曲搭配渾然天
+				成，校歌遂成。
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="footer">
+		<span>國立臺北藝術大學 學務處</span>
+		<span>02-28961000 分機 1312</span>
+		<span>地址 臺北市北投區學園路一號</span>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/egjs-jquery-transform/2.0.0/transform.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+	<script src="js/basic.js"></script>
+	
+</body>
+</html>
