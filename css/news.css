@@ -1,0 +1,141 @@
+body{
+	background-image: url(../img/school_safety/bg.png);
+    background-size: cover;
+    overflow: scroll;
+}
+#information{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 91vh;
+}
+.main-title{
+    position: relative;
+	height: 20%;
+    width: 100%;
+    max-height: 200px;
+}
+.bird{
+    position: absolute;
+    display: inline-block;
+    height: 70%;
+    width: 20%;
+    left: 23%;
+    bottom: 3%;
+	background-image: url(../img/catalog_3_rev.png);
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+.custom-title{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: 3%;
+    color: #fcdc72;
+    display: inline-block;
+    text-align: center;
+    line-height: 6vh;
+    font-size: 5.4vh;
+}
+.main-content{
+    position: relative;
+    width: 64%;
+    height: auto;
+    background-color: #f1edec;
+    opacity: 0.92;
+    margin-left: 18%;
+    margin-top: 1vh;
+    padding-bottom: 2vh;
+    border-radius: 15px;
+}
+.sub-content{
+    position: relative;
+    width: 64%;
+    height: 75vh;
+    margin-left: 18%;
+    margin-top: 1vh;
+    border-radius: 15px;
+}
+.title{
+	padding: 2vh 6vw;
+	padding-right: 0px;
+	color: #ba3f46;
+	line-height: 4.3vh;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+	font-size: 3.8vh;
+	letter-spacing: 0.5vh;
+}
+.context{
+	padding: 1vh 6vw;
+	/*padding-right: 0px;*/
+	color: #7a7a7c;
+	line-height: 4.2vh;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+	font-size: 2.4vh;
+	margin: 0.5vh 0px;
+	letter-spacing: 0.5vh;
+}
+
+.title.sub{
+	vertical-align: bottom;
+	font-size: 2.4vh;
+}
+.title.sub a{
+	color: #f1edec;
+}
+@media only screen and (max-width: 1024px) {
+	.title{
+		line-height: 3vh;
+		font-size: 2.6vh;
+		letter-spacing: 0.20vh;
+    }
+    .custom-title{
+        line-height: 5vh;
+        font-size: 4vh;
+    }
+	.context{
+		line-height: 3.2vh;
+		font-size: 1.7vh;
+		letter-spacing: 0.20vh;
+	}
+	.top-margin{
+		line-height: 1.2vh;
+	}
+}
+@media only screen and (max-width: 510px) {
+	.title{
+		font-size: 2vh;
+		letter-spacing: 0.10vh;
+    }
+    .custom-title{
+        font-size: 3vh;
+    }
+	.context{
+		font-size: 1.4vh;
+		letter-spacing: 0.10vh;
+    }
+    .main-content{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .sub-content{
+        width: 80%;
+        margin-left: 10%;
+    }
+	.title.sub{
+		font-size: 1.8vh;
+	}
+}
+@media only screen and (max-height: 768px) {
+	.context{
+		line-height: 2.4vh;
+	}
+	.top-margin{
+		line-height: 0.8vh;
+	}
+}
