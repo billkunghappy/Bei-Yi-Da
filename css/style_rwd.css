@@ -86,6 +86,7 @@
     .pop-up-modal.two{
     	height: 80vh;
     	margin: 8vh auto;
+    	line-height: 1vh;
     }
 
     .modal-img.right{

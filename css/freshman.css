@@ -1,0 +1,176 @@
+html{
+	/*overflow-y: scroll;
+	overflow-x: hidden;*/
+	background: url(../img/map_bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+@media only screen and (min-width: 700px) {
+	body{
+		overflow-y: scroll;
+		overflow-x: hidden;
+		height: 100%;
+		background: url(../img/freshman_bg.png) no-repeat top left local;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+#footer{
+	position: relative;
+}
+.top-section{
+	height: 400px;
+	width: 100%;
+	/*background-color: black;*/
+}
+.page-title{
+	display: inline-block;
+	width: 48%;
+	height: 95%;
+	text-align: center;
+	margin:auto;
+	margin-top: 5%;
+	float: right;
+	padding: 5vw 20% 10% 0%;
+	/*padding-right: 20%;/*/
+}
+.page-title .main{
+	color:#ba3f46;
+	line-height: 4vw;
+	vertical-align: center;
+	font-size:3vw;
+	letter-spacing: 0.5vw;
+	margin: 5% auto;
+}
+.page-title .sub{
+	color: #858587;
+	line-height: 3vw;
+	vertical-align: center;
+	font-size:1.4vw;
+	letter-spacing: 0.2vw;
+	margin: 2% auto;
+	margin-top: 10%;
+}
+.page-img{
+	display: inline-block;
+	width: 50%;
+	float: left;
+	margin:auto;
+	margin-top: 10%;
+	height: 90%;
+	background-image: url(../img/freshman_title_img.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.download-btn{
+	display: block;
+	text-align: center;
+	margin: auto;
+	margin-top: 2%;
+	width: 12vw;
+	height: auto;
+	border-radius: 2vw;
+	padding: 0.6vw 1vw;
+	font-size: 1.4vw;
+	color: #f1edec;
+	background-color: #858587;
+	-webkit-transition: all .4s ease;
+}
+.download-btn:hover{
+	color: #ba3f46;
+	-webkit-transition: all .4s ease;
+}
+
+.main-content{
+	color: #7a7a7c;
+	width: 100%;
+	height: calc(100vw - 400px);
+	line-height: 5vw;
+	overflow: hidden;
+	font-size: 2vw;
+	letter-spacing: 0.8vw;
+	height: auto;
+	padding: 6.5vh 15%;
+	margin-bottom: 17vw;
+}
+
+@media (orientation:portrait) {
+	body{
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: 100% auto;
+	}
+	.top-section{
+		height: 200px;
+	}
+	.main-content{
+		height: calc(70vw - 200px);
+		margin-bottom: 4vw;
+		line-height: 4vw;
+	}
+	.main-content.second{
+		height: calc(100vw - 200px);
+	}
+}
+@media only screen and (max-width: 700px) {
+	body{
+		overflow-y: scroll;
+		overflow-x: hidden;
+		height: 100%;
+		background: url(../img/freshman_bg_rwd.png) no-repeat top left local;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.top-section{
+		height: 180px;
+	}
+	.page-img{
+		width: 40%;
+		height: 90%;
+		margin-top: 10%;
+	}
+	.page-title{
+		width: 58%;
+		padding: 2vh 20% 10% 0%;
+	}
+	
+	.page-title .main{
+		margin: 20% auto;
+		margin-top: 30%;
+		line-height: 3.5vh;
+		font-size:2.2vh;
+		letter-spacing: 0.5vh;
+	}
+	.page-title .sub{
+		margin: 2% auto;
+		line-height: 1vh;
+		font-size:1.5vh;
+		letter-spacing: 0.3vh;
+	}
+	.download-btn{
+		margin-top: 10%;
+		font-size:1.5vh;
+		width: 12vh;
+		border-radius: 2vh;
+	}
+	.main-content{
+		height: calc(95vh - 180px);
+		margin-bottom: 1vh;
+		padding: 5vh 10%;
+		padding-top: 5vh;
+		font-size: 2vh;
+		letter-spacing: 0.8vw;
+		line-height: 4.2vh;
+	}
+	.main-content.second{
+		height: calc(100vh);
+	}
+}
