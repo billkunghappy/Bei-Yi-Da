@@ -12,6 +12,7 @@ body{
 	opacity: 0.92;
 	box-shadow: 1px;
 	border-radius: 15px;
+	min-height: 91vh;
 }
 .title{
 	/* padding: 4vh 6vw; */
@@ -40,7 +41,7 @@ body{
 .context{
 	display: inline-block;
 	padding: 2vh 6vw;
-	margin-bottom: 20%;
+	margin-bottom: 20px;
 	color: #7a7a7c;
 	line-height: 3vh;
 	text-align: left;
@@ -48,13 +49,29 @@ body{
 	font-size: 2vh;
 	letter-spacing: 0.25vh;
 }
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1024px) {
+	.info{
+		min-height: 88.4vh;
+	}
+}
+@media only screen and (orientation:portrait) {
+	#footer{
+		position: relative;
+	}
+	.info{
+		height: auto;
+	}
 	.rabaren{
-		max-height: 200px;
+		height: 400px;
 		width: 100%;
 	}
 	.content{
 		margin-top: 0px;
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 700px){
+	.rabaren{
+		height: 200px;
 	}
 }
