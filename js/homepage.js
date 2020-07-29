@@ -19,7 +19,7 @@ $("#enter").click(async function(){
     $('#car').hide();
     $('#car').attr('src','img/gif/car_speedup/forwardone_00000.png');
     $('#car').show();
-    var car_speedup = set_gif(38,"#car",'img/gif/car_speedup/forwardone_000',2,15);
+    var car_speedup = set_gif(38,"#car",'img/gif/car_speedup/forwardone_000',2);
     setTimeout(function() {
         clearInterval(car_speedup);
         $('#car').attr('src','img/gif/car_leave/forwardtwo_00000.png');

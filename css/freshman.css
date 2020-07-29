@@ -23,7 +23,7 @@ html{
 	position: relative;
 }
 .top-section{
-	height: 400px;
+	height: 40vw;
 	width: 100%;
 	/*background-color: black;*/
 }
@@ -35,7 +35,8 @@ html{
 	margin:auto;
 	margin-top: 5%;
 	float: right;
-	padding: 5vw 20% 10% 0%;
+	text-align: right;
+	padding: 12vw 20% 10% 0%;
 	/*padding-right: 20%;/*/
 }
 .page-title .main{
@@ -43,25 +44,29 @@ html{
 	line-height: 4vw;
 	vertical-align: center;
 	font-size:3vw;
-	letter-spacing: 0.5vw;
+	letter-spacing: 0.9vw;
 	margin: 5% auto;
+	margin-bottom: 2%;
 }
 .page-title .sub{
 	color: #858587;
 	line-height: 3vw;
 	vertical-align: center;
-	font-size:1.4vw;
-	letter-spacing: 0.2vw;
+	font-size:1.7vw;
+	letter-spacing: 0.42vw;
 	margin: 2% auto;
 	margin-top: 10%;
+}
+.main span{
+	letter-spacing: 0.42vw;
 }
 .page-img{
 	display: inline-block;
 	width: 50%;
 	float: left;
 	margin:auto;
-	margin-top: 10%;
-	height: 90%;
+	margin-top: 4%;
+	height: 96%;
 	background-image: url(../img/freshman_title_img.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -70,7 +75,7 @@ html{
 .download-btn{
 	display: block;
 	text-align: center;
-	margin: auto;
+	float: right;
 	margin-top: 2%;
 	width: 12vw;
 	height: auto;
@@ -78,7 +83,7 @@ html{
 	padding: 0.6vw 1vw;
 	font-size: 1.4vw;
 	color: #f1edec;
-	background-color: #858587;
+	background-color: #b5aca8;
 	-webkit-transition: all .4s ease;
 }
 .download-btn:hover{
@@ -89,28 +94,27 @@ html{
 .main-content{
 	color: #7a7a7c;
 	width: 100%;
-	height: calc(100vw - 400px);
 	line-height: 5vw;
 	overflow: hidden;
 	font-size: 2vw;
 	letter-spacing: 0.8vw;
 	height: auto;
 	padding: 6.5vh 15%;
-	margin-bottom: 17vw;
 }
 
+.main-content.first{
+	height: 65vw;
+}
 @media (orientation:portrait) {
-	body{
-		-webkit-background-size: 100% auto;
-		-moz-background-size: 100% auto;
-		-o-background-size: 100% auto;
-		background-size: 100% auto;
-	}
-	.top-section{
-		height: 200px;
-	}
+	/*body{
+		-webkit-background-size: 100% cover;
+		-moz-background-size: 100% cover;
+		-o-background-size: 100% cover;
+		background-size: 100% cover;
+		background: url(../img/freshman_bg_rwd.png) no-repeat top left local;
+	}*/
+	
 	.main-content{
-		height: calc(70vw - 200px);
 		margin-bottom: 4vw;
 		line-height: 4vw;
 	}
@@ -119,6 +123,15 @@ html{
 	}
 }
 @media only screen and (max-width: 700px) {
+	/*body{
+		overflow-y: scroll;
+		overflow-x: hidden;
+		height: 100%;
+		-webkit-background-size: 100% cover;
+		-moz-background-size: 100% cover;
+		-o-background-size: 100% cover;
+		background-size: 100% cover;
+	}*/
 	body{
 		overflow-y: scroll;
 		overflow-x: hidden;
@@ -130,7 +143,7 @@ html{
 		background-size: cover;
 	}
 	.top-section{
-		height: 180px;
+		height: 60vw;
 	}
 	.page-img{
 		width: 40%;
@@ -143,17 +156,20 @@ html{
 	}
 	
 	.page-title .main{
-		margin: 20% auto;
+		margin-bottom: 10%;
 		margin-top: 30%;
 		line-height: 3.5vh;
 		font-size:2.2vh;
-		letter-spacing: 0.5vh;
+		letter-spacing: 0.7vh;
+	}
+	.main span{
+		letter-spacing: 0.32vh;
 	}
 	.page-title .sub{
 		margin: 2% auto;
 		line-height: 1vh;
-		font-size:1.5vh;
-		letter-spacing: 0.3vh;
+		font-size:1.4vh;
+		letter-spacing: 0.3vw;
 	}
 	.download-btn{
 		margin-top: 10%;
@@ -162,15 +178,14 @@ html{
 		border-radius: 2vh;
 	}
 	.main-content{
-		height: calc(95vh - 180px);
 		margin-bottom: 1vh;
 		padding: 5vh 10%;
 		padding-top: 5vh;
-		font-size: 2vh;
-		letter-spacing: 0.8vw;
-		line-height: 4.2vh;
+		font-size: 1.2vh;
+		letter-spacing: 0.5vw;
+		line-height: 2.6vh;
 	}
 	.main-content.second{
-		height: calc(100vh);
+		height: calc(45vh);
 	}
 }

@@ -1,0 +1,7 @@
+modal
+	+X
+	太貼邊
+新生始業
+	title-img size
+	title float right
+	background cover -> contain

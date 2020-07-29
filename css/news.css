@@ -7,21 +7,27 @@ body{
 	padding: 0px;
 	margin: 0px;
 	width: 100%;
-	height: 91vh;
+	height: auto;
+	min-height: 91vh;
+	overflow: hidden;
+}
+#footer{
+	position: relative;
 }
 .main-title{
     position: relative;
-	height: 20%;
+	height: 20vh;
     width: 100%;
     max-height: 200px;
 }
 .bird{
+	z-index: 1000;
     position: absolute;
     display: inline-block;
-    height: 70%;
-    width: 20%;
-    left: 23%;
-    bottom: 3%;
+    height: 90%;
+    width: 40%;
+    left: 10%;
+    bottom: -10%;
 	background-image: url(../img/catalog_3_rev.png);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -37,8 +43,11 @@ body{
     text-align: center;
     line-height: 6vh;
     font-size: 5.4vh;
+    letter-spacing: 1.2vh;
+    margin-bottom: 2vh;
 }
 .main-content{
+	z-index: 900;
     position: relative;
     width: 64%;
     height: auto;
@@ -46,47 +55,74 @@ body{
     opacity: 0.92;
     margin-left: 18%;
     margin-top: 1vh;
-    padding-bottom: 2vh;
+    padding: 7vh 1vw;
     border-radius: 15px;
 }
 .sub-content{
     position: relative;
     width: 64%;
-    height: 75vh;
+    height: auto;
     margin-left: 18%;
     margin-top: 1vh;
     border-radius: 15px;
+    margin-bottom: 40px;
+    padding: 7vh 1vw;
 }
 .title{
 	padding: 2vh 6vw;
+	padding-top: 6vh;
 	padding-right: 0px;
 	color: #ba3f46;
 	line-height: 4.3vh;
 	text-align: left;
 	vertical-align: middle;
 	width: 100%;
-	font-size: 3.8vh;
+	font-size: 3.2vh;
 	letter-spacing: 0.5vh;
 }
 .context{
-	padding: 1vh 6vw;
+	padding: 1vh 5vw;
 	/*padding-right: 0px;*/
 	color: #7a7a7c;
-	line-height: 4.2vh;
+	line-height: 5vh;
 	text-align: left;
 	vertical-align: middle;
 	width: 100%;
+	height: auto;
 	font-size: 2.4vh;
 	margin: 0.5vh 0px;
 	letter-spacing: 0.5vh;
 }
-
-.title.sub{
-	vertical-align: bottom;
-	font-size: 2.4vh;
+.context.top{
+	padding: 1vh 6vw;
 }
-.title.sub a{
-	color: #f1edec;
+.sub-content .title{
+	padding: 1vh 4.8vw;
+}
+.p_br{
+	width: 100%; 
+	height: 1vh; 
+	margin: 0px;
+}
+@media only screen and (orientation:portrait) {
+	.main-content{
+        width: 80%;
+        margin-left: 10%;
+        padding: 2vh 1vw;
+    }
+    .sub-content{
+        width: 80%;
+        margin-left: 10%;
+        height: auto;
+        padding: 2vh 1vw;
+    }
+
+	
+}
+@media only screen and (max-width: 1024px) {
+	#information{
+		min-height: 88.4vh;
+	}
 }
 @media only screen and (max-width: 1024px) {
 	.title{
@@ -99,7 +135,7 @@ body{
         font-size: 4vh;
     }
 	.context{
-		line-height: 3.2vh;
+		line-height: 4vh;
 		font-size: 1.7vh;
 		letter-spacing: 0.20vh;
 	}
@@ -117,25 +153,10 @@ body{
     }
 	.context{
 		font-size: 1.4vh;
+		line-height: 3vh;
 		letter-spacing: 0.10vh;
     }
-    .main-content{
-        width: 80%;
-        margin-left: 10%;
+    .p_br{
+    	line-height: 0.5vh;
     }
-    .sub-content{
-        width: 80%;
-        margin-left: 10%;
-    }
-	.title.sub{
-		font-size: 1.8vh;
-	}
-}
-@media only screen and (max-height: 768px) {
-	.context{
-		line-height: 2.4vh;
-	}
-	.top-margin{
-		line-height: 0.8vh;
-	}
 }

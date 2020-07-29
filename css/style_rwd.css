@@ -58,20 +58,30 @@
 @media only screen and (max-width: 1024px) {
 	#footer{
 		padding: 1vh 0px;
-		height: 11.6vh;
-		font-size:12px;
+		height: 15vh;
+		font-size:11px;
+		padding: 3vh;
 	}
 	#footer > span{
 		width: 100%;
 		height: 3.2vh;
-		line-height: 3.2vh;
+		line-height: 3vh;
+	}
+	.map_icon{
+		margin: 4vw;
 	}
 }
-/*700切換*/
-@media only screen and (max-height: 700px) {
+/*@media only screen and (max-width: 800px) {
 	#footer{
 		font-size:9px;
 	}
+}*/
+/*700切換*/
+@media only screen and (max-height: 700px) {
+	#footer{
+		font-size:7px;
+	}
+
 }
 /**/
 @media only screen and (max-width: 700px) {

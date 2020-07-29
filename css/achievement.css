@@ -29,7 +29,7 @@ body{
 	color: #7a7a7c;
 	font-size:8vw;
 	letter-spacing: 2vw;
-	opacity: 0.8;
+	/*opacity: 0.8;*/
 }
 .page-img{
 	display: inline-block;
@@ -42,9 +42,9 @@ body{
 	background-position: center;
 	background-size: contain;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 	.top-section{
-		height: 200px;
+		height: 150px;
 	}
 
 	.page-title{
@@ -130,6 +130,11 @@ a.active{
 	width: 30%;
 	display: flex;
 }
+@media only screen and (max-width: 700px) {
+	.custom-carousel{
+		height: 57vw;
+	}
+}
 .custom-carousel-footer > .dot{
 	background-color: #e2d4ce;
 	display: inline-block;
@@ -157,14 +162,28 @@ a.active{
 	z-index: 1000;
 }
 .custom-carousel .arrow.left{
-	left: 1vw;
+	left: 2vw;
 }
 .custom-carousel .arrow.right{
-	right: 1vw;
+	right: 2vw;
+}
+.course_list-container{
+	position: relative;
+	margin: 5vh 5%;
+	margin-top: 10vh;
+	width: 90%;
+	height: auto;
+	padding: 10px;
+	background-color: white;
+	box-sizing: border-box;
+}
+@media only screen and (max-width: 800px) {
+	.course_list-container{
+		margin-top: 5vh;
+	}
 }
 .course_list{
-	width: 80%;
-	margin: 5vh 10%;
+	width: 100%;
 	height: auto;
 	object-fit: contain;
 }

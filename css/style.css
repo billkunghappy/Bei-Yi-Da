@@ -16,6 +16,7 @@ html, body{
 }
 a{
 	text-decoration: none!important;
+	color: inherit;
 	width: 100%;
 	height: 100%;
 }
@@ -26,7 +27,7 @@ a:link{
 .map_icon{
 	z-index: 999;
 	width: 6vh;
-	margin:  2vh;
+	margin:  6vh;
 	height: auto;
 	position: fixed;
 	cursor: pointer;
@@ -138,17 +139,18 @@ a:link{
 	object-fit: contain;
 }
 #map_item_0{
-	height: 12%;
-	width: 35%;
-	left: 6%;
+	height: 10.5%;
+	width: 29.16%;
+	left: 8%;
 	top: 8%;
+	
 }
 #map_item_0 img{
 	margin-top: 23%;
 }
 #map_item_1{
 	height: 12%;
-	width: 12%;
+	width: 16%;
 	left: 50%;
 	top: 38%;
 	
@@ -177,7 +179,7 @@ a:link{
 #map_item_5{
 	height: 15%;
 	width: 15%;
-	left: 68%;
+	left: 74%;
 	top: 55%;
 }
 #map_item_6{
@@ -214,8 +216,8 @@ a:link{
 	-webkit-transition: all .6s ease;
 }
 #map_item_0 span{
-	left:25%;
-	top:0%;	
+	left:34%;
+	top:-5%;	
 }
 #map_item_1 span{
 	left: 115%;
@@ -236,7 +238,7 @@ a:link{
 	
 }
 #map_item_5 span{
-	left: 35%;
+	left: 20%;
 	top: 103%;
 	
 }
@@ -331,7 +333,6 @@ a:link{
 	top: 10%;
 	left: 25%;
 	-webkit-transition: all .6s ease;
-	cursor: auto;
 }
 #catalog_item_4  img{
 	/* -webkit-transform: scale(1.6) translateY(-10%) translateX(2vw); */
@@ -361,7 +362,7 @@ a:link{
 	top: calc(10% + 18vh);
 }
 #catalog_item_1  span{
-	left: calc(6vw + 18vh);
+	left: calc(8vw + 18vh);
 	top: calc(10% + 6vh);
 	letter-spacing: 2px;
 }
@@ -370,11 +371,11 @@ a:link{
 	top: calc(10% + 33vh);
 }
 #catalog_item_3  span{
-	left: calc(3vw + 10vh);
+	left: calc(5vw + 10vh);
 	top: calc(10% + 13vh);
 }
 #catalog_item_4  span{
-	left: calc(15vw + 2vh);
+	left: calc(13vw + 2vh);
 	top: calc(10% + 10vh);
 }
 #catalog_item_5  span{
@@ -382,8 +383,8 @@ a:link{
 	top: calc(10% + 14vh);
 }
 #catalog_item_6  span{
-	left: calc(10vw + 10vh);
-	top: calc(10% + 9vh);
+	left: calc(8vw + 10vh);
+	top: calc(12% + 9vh);
 }
 
 /*hover animate*/
@@ -409,12 +410,14 @@ a:link{
 
 }
 .modal-body{
+	position: relative;
 	letter-spacing: 0px;
 	padding: 5vh 2vw;
 	padding-bottom: 1vh;
 	background-color: #F1EDEC;
 }
 .modal-img{
+	padding: 6%;
 	display: inline-block;
 	position: relative;
 	height: 54vh;
@@ -432,6 +435,7 @@ a:link{
 	width: 64vw;
 }
 .modal-img > img{
+	object-position: center;
 	position: relative;
 	display: inline-block;
 	height: 80%;
@@ -456,4 +460,14 @@ a:link{
 	color: #eb9387;
 	-webkit-transition: all .6s ease;
 }
-
+.modal_close{
+	z-index: 999;
+	width: 6vh;
+	margin:  2vh;
+	right: 2px;
+	top: 0vh;
+	height: auto;
+	position: absolute;
+	cursor: pointer;
+	-webkit-transition: all .6s ease;
+}

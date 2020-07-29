@@ -84,32 +84,33 @@ body{
 
 .main-content > .left{
 	width: 45%;
-	padding: 10px;
+	padding-left: 18px;
 	float: left;
 	margin: 0px;
 }
 .main-content > .right{
 	width: 45%;
-	padding: 10px;
+	padding-left: 18px;
 	float: right;
 	margin: 0px;
 }
 .title{
-	padding: 4vh 6vw;
+	padding: 7vh 6vw;
+	padding-bottom: 1vh;
 	padding-right: 0px;
 	color: #ffd13b;
 	line-height: 4vh;
 	text-align: left;
 	vertical-align: middle;
 	width: 100%;
-	font-size: 3.2vh;
-	letter-spacing: 0.25vh;
+	font-size: 2.8vh;
+	letter-spacing: 0.8vh;
 }
 .context{
 	padding: 1vh 6vw;
 	/*padding-right: 0px;*/
 	color: #f1edec;
-	line-height: 3vh;
+	line-height: 3.3vh;
 	text-align: left;
 	vertical-align: middle;
 	width: 100%;
@@ -129,12 +130,15 @@ body{
 }
 .title.sub a{
 	color: #f1edec;
+	-webkit-transition: all .4s ease;
+}
+.title.sub a:hover{
+	color: #eb9387;
+	-webkit-transition: all .4s ease;
 }
 @media only screen and (max-width: 1024px) {
 	.title{
-		line-height: 3.2vh;
-		font-size: 2.8vh;
-		letter-spacing: 0.20vh;
+		font-size: 2.4vh;
 	}
 	.context{
 		line-height: 2.5vh;
@@ -147,24 +151,18 @@ body{
 }
 @media only screen and (max-width: 510px) {
 	.title{
-		font-size: 2vh;
-		letter-spacing: 0.10vh;
+		line-height: 2.8vh;
+		font-size: 1.6vh;
+		letter-spacing: 0.5vh;
 	}
 	.context{
-		font-size: 1.4vh;
+		font-size: 1.25vh;
 		letter-spacing: 0.10vh;
 	}
 	.title.sub{
-		font-size: 1.8vh;
+		font-size: 1.4vh;
 	}
 }
-@media only screen and (max-height: 768px) {
-	.context{
-		line-height: 2.4vh;
-	}
-	.top-margin{
-		line-height: 0.8vh;
-	}
-}
+
 
 
