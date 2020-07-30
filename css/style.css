@@ -324,7 +324,7 @@ a:link{
 #catalog_item_2  img{
 	/* -webkit-transform: scale(1.6) translateY(10%) translateX(0vw); */
 	height: 100%;
-	top: 40%;
+	top: 22%;
 	-webkit-transition: all .6s ease;
 }
 #catalog_item_3  img{
@@ -368,7 +368,7 @@ a:link{
 }
 #catalog_item_2  span{
 	left: calc(6vw);
-	top: calc(10% + 33vh);
+	top: calc(0% + 30vh);
 }
 #catalog_item_3  span{
 	left: calc(5vw + 10vh);

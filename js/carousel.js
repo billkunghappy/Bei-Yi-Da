@@ -1,8 +1,8 @@
-
-
 var carousel_img_num=[6,6,6];
-var history_names=["108","107","106"];
 var carousel_now=[0,0,0];
+for (var i = 0; i <3 ; i++) {
+	$('#carousel-title-'+i.toString()).html(history_names[i]+"學年")
+}
 
 
 function carousel_move(event){
