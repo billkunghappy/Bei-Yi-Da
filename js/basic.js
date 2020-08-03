@@ -108,7 +108,7 @@ $("#close_index_map").click(async function(){
 
 
 // Link
-var link_redirect=["school_safety.html","freshman.html","achievement.html","news.html","#","song.html","#","homepage.html"];
+var link_redirect=["school_safety.html","freshman.html","achievement.html","news.html","#","song.html","#","index.html"];
 function all_links(event){
     // move car
     now_pos_index=index_to_pos_index[event.data.index];
